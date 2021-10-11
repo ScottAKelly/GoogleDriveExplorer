@@ -1,0 +1,17 @@
+.folder-select {
+    cursor: pointer;
+}
+
+li.folder-select {
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.breadcrumbs ul {
+    text-align: right;
+    transform: rotate(180deg);
+}
+.breadcrumbs ul > li {
+    transform: rotate(-180deg);
+}
