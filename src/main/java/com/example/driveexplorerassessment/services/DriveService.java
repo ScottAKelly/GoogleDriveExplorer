@@ -30,6 +30,11 @@ public class DriveService implements IDriveService {
     }
 
     @Override
+    public String driveRootFolderId() {
+        return "1l3QbzLedEHl_FKp-hWJTzvWFFtH4kxZF";
+    }
+
+    @Override
     public File getFile(String fileId) throws IOException, GeneralSecurityException {
         return DRIVE_SERVICE.files().get(fileId)
                 .setFields("id, name, mimeType, iconLink, parents").execute();

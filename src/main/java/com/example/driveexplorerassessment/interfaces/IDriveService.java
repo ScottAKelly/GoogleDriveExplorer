@@ -8,7 +8,9 @@ import java.security.GeneralSecurityException;
 import java.util.List;
 
 // TODO: Implement unit testing
+// TODO: Implement getting root folder if dynamically instead of hard coded getRootId();
 public interface IDriveService  {
+    String driveRootFolderId();
     File getFile(String fileId) throws IOException, GeneralSecurityException;
     List<File> getFolders() throws IOException, GeneralSecurityException;
     List<File> getFiles() throws IOException, GeneralSecurityException;
